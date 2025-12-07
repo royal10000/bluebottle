@@ -150,21 +150,24 @@ nav {
   transition: 0.2s ease;
 } */
 /*user login  */
-#user-login {
+#user-login,
+#cart-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   width: 40rem;
-  padding:  6rem 0;
+  /* padding:  1rem 0; */
   background-color: #fdfbf7ef;
   z-index: 2;
-  overflow: hidden;
+  /* overflow: hidden;
   visibility: hidden;
   opacity: 0;
-  transition: 0.2s ease;
+  transition: 0.2s ease; */
 }
-
+#user-login{
+  display: none;
+}
 
 #user-login:target {
   visibility: visible;
@@ -273,9 +276,9 @@ nav {
   gap: 1rem;
   box-shadow: 1px 0.5px 5px black;
 }
-
+/* 
 .email-login-box {
-}
+} */
 
 .email-login-box p {
   text-transform: uppercase;
@@ -314,6 +317,49 @@ nav {
 .email-button:hover {
   cursor: pointer;
 }
+
+/* cart-box */
+
+#cart-wrapper{
+  width: 60rem;
+}
+#cart-box{
+  width: 50rem;
+  margin: 3rem auto;
+  /* background-color: red; */
+}
+
+.cart-upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  /* background-color: red; */
+}
+
+.item-cart-wrapper{
+  background-color: red;
+  display: flex;
+  gap: 1;
+}
+.cart-item-img{
+  width: 12rem;
+}
+
+.cart-item-img img{
+  width: 100%;
+  object-fit: cover ;
+}
+
+/* #cart-wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #f1eee9b5;
+  z-index: 1;
+  left: 0;
+} */
+
 /* hero section */
 .hero-box {
   width: 100%;
@@ -848,8 +894,8 @@ footer {
   /* color: white; */
   padding: 5rem 0;
 }
-.footer-wrapper {
-}
+/* .footer-wrapper {
+} */
 
 .footer-title,
 .footer-subtitle {

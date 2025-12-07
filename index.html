@@ -169,7 +169,12 @@
                       <p>We'll send you a link to login via email</p>
                       <form action="" id="">
                         <div class="email-input">
-                          <input type="email" name="" id="emailId" placeholder="email address">
+                          <input
+                            type="email"
+                            name=""
+                            id="emailId"
+                            placeholder="email address"
+                          />
                         </div>
                         <button class="email-button">continue</button>
                       </form>
@@ -179,9 +184,31 @@
               </div>
             </li>
             <li>
-              <a href="" class="cart-link"
+              <a href="#cart-wrapper" class="cart-link"
                 ><i class="fa-solid fa-bag-shopping"></i
               ></a>
+              <div id="cart-wrapper">
+                <div id="cart-box">
+                  <div class="cart-upper">
+                     <h2 class="login-title">
+                        Your Cart
+                      </h2> 
+                    <a href="#"> <i class="fa-solid fa-x"></i></a>
+                    
+                  </div>
+                  <div class="item-cart-wrapper">
+                    <div class="cart-item-img"><img src="image/release_1.webp" alt=""></div>
+                    <div class="cart-info-box">
+                      <a href="single-page.html" class="cart-item-title">Craft Instant Espresso Single Serve</a>
+                      <div class="cart-item-number">
+                        <span>-</span>
+                        <input type="text" value="1" min="1" max="10">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
